@@ -2,7 +2,7 @@
     include 'conn.php';
 
     $id = $_GET['id'];
-    $sql = "DELETE FROM `news` WHERE `news`.`id` = '".$id."`";
+    $sql = "DELETE FROM `news` WHERE `news`.`id` = '".$id."'";
     $query = mysqli_query($conn, $sql);
         if ($query) {
             $msg = "Data berhasil dihapus!";
